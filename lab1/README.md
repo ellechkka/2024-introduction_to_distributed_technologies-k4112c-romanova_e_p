@@ -57,3 +57,30 @@ minikebe start
 
 Результат выполнения :
 ![cluster](./start_minicube.png)
+
+#### 4. Загрузка kubectl
+
+Это основная утилита командной строки для управления кластером Kubernetes. Основные команды:
+
+```bash
+
+# Просмотр подов
+kubectl get pods
+
+# Просмотр сервисов
+kubectl get services
+
+# Создание деплоймента
+kubectl create deployment name --image=image-name
+
+# Просмотр логов пода
+kubectl logs pod-name
+
+# Удаление ресурса
+kubectl delete pod/service/deployment name
+
+# Применение конфигурации из файла
+kubectl apply -f filename.yaml
+```
+
+![image](./kubectl.png)
