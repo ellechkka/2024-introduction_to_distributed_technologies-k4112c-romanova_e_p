@@ -52,7 +52,7 @@ Minikube был скачен с официального сайта https://mini
 Была использована следующая команда:
 
 ```bash
-minikebe start
+minikube start
 ```
 
 Результат выполнения :
@@ -84,3 +84,27 @@ kubectl apply -f filename.yaml
 ```
 
 ![image](./kubectl.png)
+
+#### 5. Создание сервиса для доступа к контейнеру
+
+В начале нужно создать соотвествующей объект в кластере kurbernets, для этого используется следующая команда:
+
+```bash
+minikube kubectl -- apply -f vault-pod.yaml
+```
+
+Далее выполняется команда:
+
+```bash
+minikube kubectl -- expose pod vault --type=NodePort --port=8200
+```
+
+Данная команда создает сервис для пода vault. Сервис будет перенаправлять трафик на под vault через порт 8200. 
+
+```bash
+minikube kubectl -- port-forward service/vault 8200:8200
+```
+
+Результат выполнения команд:
+![image](./service.png)
+
