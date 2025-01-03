@@ -108,3 +108,5 @@ minikube kubectl -- port-forward service/vault 8200:8200
 Результат выполнения команд:
 ![image](./service.png)
 
+После перехода по ссылке открывается интерфейс:
+![interface](./interface.png)
