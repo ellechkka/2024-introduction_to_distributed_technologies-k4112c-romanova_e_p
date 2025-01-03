@@ -125,3 +125,7 @@ minikube kubectl -- logs vault
 
 Далее при помощи полученного токена был успешно осуществлен вход:
 ![screen](./token_login.png.png)
+
+### Диаграмма организации
+
+![diagram](./diagram.png)
