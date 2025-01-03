@@ -34,5 +34,17 @@ Date of finished:
 
 #### 1. Установка Docker
 
-Docker был скачен с официального сайта https://www.docker.com/ и установлен на операционную систему Windows 11.
+Docker был скачен с официального сайта https://www.docker.com/ и установлен на Windows 11.
 ![image](./docker.png)
+
+#### 2. Установка Minikube
+
+Minikube был скачен с официального сайта https://minikube.sigs.k8s.io/docs/start/.
+
+#### 3. Развертывание minikube cluster
+
+Была использована следующая команда:
+
+```bash
+minikebe start
+```
