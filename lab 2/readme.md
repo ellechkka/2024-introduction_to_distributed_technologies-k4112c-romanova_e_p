@@ -53,7 +53,7 @@ minikube kubectl -- port-forward service/frontend-service 3000:3000
 #### 4. Проверка в браузере
 
 Для проверки нужно открыть адрес `localhost:3000`:
-![image](.pic2.png)
+![image](./pic2.png)
 
 Переменные `REACT_APP_USERNAME` и `REACT_APP_COMPANY_NAME` не изменяются, потому что они были заданы как переменные среды при создании объекта deployment. Эти переменные фиксированы в файле [deployment.yaml](deployment.yaml).
 
@@ -62,8 +62,8 @@ minikube kubectl -- port-forward service/frontend-service 3000:3000
 #### 5. Проверка логов контейнера
 
 Логи обоих контейнеров представлены ниже:
-![image](./log 1.png)
+![image](./log_1.png)
 
 ### Диаграмма организации
 
-![image](./diagram (1).png)
+![image](./diagram_(1).png)
