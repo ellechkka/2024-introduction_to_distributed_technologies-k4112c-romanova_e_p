@@ -1,4 +1,20 @@
-University: ITMO University Faculty: FICT Course: Introduction to distributed technologies Year: 2024 Group: K4112c Author: Romanova Elina Pavlovna Lab: Lab2 Date of create: 05.01.2024 Date of finished:
+University: [ITMO University](https://itmo.ru/ru/)
+
+Faculty: [FICT](https://fict.itmo.ru)
+
+Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies)
+
+Year: 2024
+
+Group: K4112c
+
+Author: Romanova Elina Pavlovna
+
+Lab: Lab2
+
+Date of create: 05.01.2025
+
+Date of finished: 
 
 ## Лабораторная работа №2 "Развертывание веб сервиса в Minikube, доступ к веб интерфейсу сервиса. Мониторинг сервиса."
 
