@@ -67,7 +67,7 @@ Cоздается конфигурационной файл [deployment3.yaml](.
 Для создания объекта Deployment в Kubernates была использована следующая команда:
 
 ```bash
-minikube kubectl -- apply -f deployment.yaml
+minikube kubectl -- apply -f deployment3.yaml
 ```
 
 Далее аналогично был cоздан Service для приложения с помощью файла service2.yaml. Проверен статус подов с помощью kubectl get pods, все поды находятся в состоянии Running.
