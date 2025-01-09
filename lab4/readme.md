@@ -56,3 +56,16 @@ minikube start --network-plugin=cni --cni=calico --nodes=2
 Далее нодам был задан `label` на основании их условного георграфического расположения:
 ![image](./pic2.png)
 
+#### 4. Настройка Calico
+
+Установлен инструмент calicoctl для работы с ресурсами Calico, а также установлены CRD для Calico с помощью манифеста calico.yaml.
+
+![image](./pic3.png)
+
+Cоздается конфигурационной файл [deployment3.yaml](./deployment3.yaml), в нем задается тип объекта `kind`, его идентификатор `name`, количество реплик `replicas`, а также спецификация контейнеров, которая включается в себя образ `image`, имя контейнера `name`, и переменные окружения `env`.
+
+Для создания объекта Deployment в Kubernates была использована следующая команда:
+
+```bash
+minikube kubectl -- apply -f deployment.yaml
+```
