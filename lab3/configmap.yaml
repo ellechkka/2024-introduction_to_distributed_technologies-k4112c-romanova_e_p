@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: lab3configmap
-data:
-  REACT_APP_USERNAME: "ellechkka"
-  REACT_APP_COMPANY_NAME: "just_chill_company"
