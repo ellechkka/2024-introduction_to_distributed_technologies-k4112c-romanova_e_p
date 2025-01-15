@@ -14,7 +14,7 @@ Lab: Lab1
 
 Date of create: 12.12.2024
 
-Date of finished: 
+Date of finished: 09.01.2024
 
 ## Лабораторная работа №1 "Установка Docker и Minikube, мой первый манифест."
 
