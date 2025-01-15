@@ -76,7 +76,7 @@ TLS-сертификат обеспечивает шифрование соед�
 Для создания TLS-сертификата была выполнена следующая команда:
 
 ```bash
-openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out MyCertificate.crt -keyout MyKey.key -subj "/CN=ellechkka.com"
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=ellechkka.com/O=just_chill_company"
 ```
 
 ![image](openssl.png)
