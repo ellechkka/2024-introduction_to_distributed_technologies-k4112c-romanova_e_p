@@ -81,12 +81,12 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt
 
 ![image](openssl.png)
 
-Данная команда создает самоподписанный сертификат MyCertificate.crt и соответствующий ему закрытый ключ MyKey.key, привязанный к домену ellechkka.com.
+Данная команда создает самоподписанный сертификат tls.crt и соответствующий ему закрытый ключ tls.key, привязанный к домену ellechkka.com.
 
 Затем данный сертификат импортируется как объект secret, с помощью следующий команды:
 
 ```bash
-minikube kubectl -- create secret tls app-tls --key tls.key --cert MyCertificate.crt
+kubectl create secret tls my-tls-secret --cert=tls.crt --key=tls.key
 ```
 #### 4. Создание Ingress
 
