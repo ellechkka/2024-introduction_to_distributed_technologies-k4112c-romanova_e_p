@@ -46,11 +46,11 @@ minikube kubectl -- apply -f configmap.yaml
 
 ReplicaSet в Kubernetes управляет количеством реплик подов, обеспечивая их высокую доступность. Если под выходит из строя, ReplicaSet автоматически создаёт новый, чтобы поддерживать нужное количество реплик. В отличие от Deployment, ReplicaSet не поддерживает управление версиями, но используется для создания и управления подами в Deployment.
 
-В конфигурационном файле [deployment2.yaml](./deployment2.yaml) описана конфигурация объекта ReplicaSet. В конце файла также указывается ранее созданный объект lab3configmap, который содержит переменные среды.
+В конфигурационном файле [replicaset.yaml](./replicaset.yaml) описана конфигурация объекта ReplicaSet. В конце файла также указывается ранее созданный объект lab3configmap, который содержит переменные среды.
 
 После создания файла объект ReplicaSet создается в Kubernetes с помощью команды:
 ```bash
-minikube kubectl -- apply -f deployment2.yaml
+minikube kubectl -- apply -f replicaset.yaml
 ```
 #### 3. Включение Ingress и создание TLS-сертификата
 
