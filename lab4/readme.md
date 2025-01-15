@@ -58,7 +58,7 @@ minikube start --network-plugin=cni --cni=calico --nodes=2
 
 #### 4. Настройка Calico
 
-Установлен инструмент calicoctl для работы с ресурсами Calico, а также установлены CRD для Calico с помощью манифеста calico.yaml.
+Установлен инструмент calicoctl для работы с ресурсами Calico, а также установлены CRD для Calico и назначены IP-адреса подам из разных пулов IP, в зависимости от меток с помощью манифеста [ippool.yaml](./ippool.yaml). 
 
 ![image](./pic3.png)
 
