@@ -62,7 +62,7 @@ minikube start --network-plugin=cni --cni=calico --nodes=2
 
 ![image](./pic3.png)
 
-Cоздается конфигурационной файл [deployment3.yaml](./deployment3.yaml), в нем задается тип объекта `kind`, его идентификатор `name`, количество реплик `replicas`, а также спецификация контейнеров, которая включается в себя образ `image`, имя контейнера `name`, и переменные окружения `env`.
+Cоздается конфигурационной файл [deployment3.yaml](./deployment3.yaml), где создаётся Deployment с двумя репликами контейнера, а также передаёт переменные окружения REACT_APP_USERNAME и REACT_APP_COMPANY_NAME в контейнер.
 
 Для создания объекта Deployment в Kubernates была использована следующая команда:
 
@@ -70,7 +70,12 @@ Cоздается конфигурационной файл [deployment3.yaml](.
 minikube kubectl -- apply -f deployment3.yaml
 ```
 
-Далее аналогично был cоздан Service для приложения с помощью файла service2.yaml. Проверен статус подов с помощью kubectl get pods, все поды находятся в состоянии Running.
+Далее аналогично был cоздан Service для приложения с помощью файла [service2.yaml](./service2.yaml). Проверен статус подов с помощью kubectl get pods, все поды находятся в состоянии Running.
+
+```bash
+kubectl get pods -o wide
+```
+![image](./pic5.png)
 
 #### 5. Тестирование сетевого взаимодействия
 
